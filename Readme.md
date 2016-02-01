@@ -1,1 +1,1 @@
-Demonstration of an error with wallaby.js
+Front end boilerplate from based on [TJ Holowaychuk's boilerplate](https://github.com/tj/frontend-boilerplate), adding [wallaby.js](http://wallabyjs.com/)
