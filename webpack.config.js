@@ -11,7 +11,7 @@ module.exports = {
   },
   output: {
     path: path.join(__dirname, './static'),
-    filename: 'bundle.js',
+    filename: 'bundle.js'
   },
   module: {
     loaders: [
@@ -31,7 +31,6 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         loaders: [
-          'react-hot',
           'babel-loader'
         ]
       },
@@ -50,9 +49,5 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env': { NODE_ENV: JSON.stringify(process.env.NODE_ENV || 'development') }
     })
-  ],
-  devServer: {
-    contentBase: './client',
-    hot: true
-  }
+  ]
 }
